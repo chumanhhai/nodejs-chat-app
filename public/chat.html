@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/chatStyle.css">
+    <title>Chat App</title>
+</head>
+
+<body>
+    <div class="side-bar" id="sideBar">
+        <div class="room-title" id="roomTitle"></div>
+        <ul class="list-user" id="listUser"></ul>
+    </div>
+    <div class="container">
+        <div class="main-section">
+            <p id="chatSection" class="chatSection"></p>
+
+            <form id="form">
+                <input type="text" name="message" id="message" placeholder="Message" autocomplete="off" required>
+                <input type="submit" name="sendBtn" id="sendBtn" value="Send">
+                <button id="shareBtn">Share location</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+
+</html>
