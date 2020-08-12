@@ -74,7 +74,7 @@ function createChatMessage (message) {
     } else {
         html = html.replace("chat-or-location", `<a href="${message.text}" target="_blank">My location</a>`);
     }
-    if (message.username.trim().toLowerCase() === username) {
+    if (message.username === username.trim().toLowerCase()) {
         html = html.replace("yours-or-mine", "mine");
     }
     return html;
